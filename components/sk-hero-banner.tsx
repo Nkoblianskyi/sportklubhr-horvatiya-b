@@ -56,7 +56,7 @@ export function SkHeroBanner() {
 
           {/* Description only on large screens */}
           <p className="hidden md:block text-sk-white/90 text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-4 md:mb-6 font-serif px-4">
-            Nezavisne recenzije, detaljne analize i ekskluzivni bonusi za najbolje online betting operatore u Hrvatskoj.
+            Nezavisne recenzije, detaljne analize i ekskluzivni bonusi za najbolje betting operatore u Hrvatskoj.
             Sigurno, pouzdano i odgovorno klađenje.
           </p>
 
