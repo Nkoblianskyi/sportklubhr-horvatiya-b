@@ -66,7 +66,7 @@ export function SkOffersDialog({ sites }: SkOffersDialogProps) {
           </div>
 
           <div className="px-4 py-4 md:py-5 bg-white">
-            <div className="relative bg-sk-grey-light h-20 md:h-24 w-full max-w-[220px] mx-auto mb-4 border-2 border-sk-border shadow-md overflow-hidden p-3">
+            <div className="relative bg-black h-20 md:h-24 w-full max-w-[220px] mx-auto mb-4 border-2 border-sk-border shadow-md overflow-hidden p-3">
               <Image src={topSite.logo || "/placeholder.svg"} alt={topSite.name} fill className="object-contain p-2" />
             </div>
 
