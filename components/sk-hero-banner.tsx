@@ -40,13 +40,13 @@ export function SkHeroBanner() {
         <div className="max-w-5xl mx-auto text-center">
           {/* Badge */}
           <div className="mb-1.5 md:mb-6 inline-block">
-            <div className="px-2 py-0.5 md:px-6 md:py-2 bg-sk-red text-sk-white font-display md:text-xs uppercase tracking-widest border-2 border-sk-red-dark shadow-lg text-sm">
+            <div className="px-2 py-0.5 md:px-6 md:py-2 bg-sk-red text-sk-white font-display md:text-xs uppercase tracking-widest border-2 border-sk-red-dark shadow-lg text-xs">
               Najbolji Betting Operatori
             </div>
           </div>
 
           {/* Main Heading - компактніше на мобільних */}
-          <h1 className="font-display leading-tight sm:text-xl md:text-5xl lg:text-6xl font-bold text-sk-white mb-1.5 md:mb-4 text-2xl">
+          <h1 className="font-display leading-tight sm:text-xl md:text-2xl lg:text-3xl font-bold text-sk-white mb-1.5 md:mb-4 text-2xl">
             STRUČNE RECENZIJE
             <br />
             <span className="text-sk-red">NAJBOLJIH</span>
@@ -55,7 +55,7 @@ export function SkHeroBanner() {
           </h1>
 
           {/* Description only on large screens */}
-          <p className="hidden md:block text-sk-white/90 text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-4 md:mb-6 font-serif px-4">
+          <p className="hidden md:block text-sk-white/90 text-sm md:text-base leading-relaxed max-w-3xl mx-auto mb-4 md:mb-6 font-serif px-4">
             Nezavisne recenzije, detaljne analize i ekskluzivni bonusi za najbolje betting operatore u Hrvatskoj.
             Sigurno, pouzdano i odgovorno klađenje.
           </p>
@@ -63,22 +63,22 @@ export function SkHeroBanner() {
           {/* Trust indicators on mobile */}
           <div className="flex md:hidden justify-center items-center gap-3 px-2 mt-2">
             <div className="flex flex-col items-center">
-              <Trophy className="w-4 h-4 text-sk-gold mb-0.5" />
+              <Trophy className="w-3 h-3 text-sk-gold mb-0.5" />
               <p className="text-sk-white text-[8px] font-bold font-display uppercase">Top Operatori</p>
             </div>
 
             <div className="flex flex-col items-center">
-              <Shield className="w-4 h-4 text-sk-gold mb-0.5" />
+              <Shield className="w-3 h-3 text-sk-gold mb-0.5" />
               <p className="text-sk-white text-[8px] font-bold font-display uppercase">100% Sigurno</p>
             </div>
 
             <div className="flex flex-col items-center">
-              <TrendingUp className="w-4 h-4 text-sk-gold mb-0.5" />
+              <TrendingUp className="w-3 h-3 text-sk-gold mb-0.5" />
               <p className="text-sk-white text-[8px] font-bold font-display uppercase">Najbolje Kvote</p>
             </div>
 
             <div className="flex flex-col items-center">
-              <Zap className="w-4 h-4 text-sk-gold mb-0.5" />
+              <Zap className="w-3 h-3 text-sk-gold mb-0.5" />
               <p className="text-sk-white text-[8px] font-bold font-display uppercase">Brze Isplate</p>
             </div>
           </div>
