@@ -1,0 +1,308 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* SportKlub HR - Professional Sports Journal Theme */
+  --background: oklch(0.98 0.002 240);
+  --foreground: oklch(0.15 0.01 240);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.01 240);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.01 240);
+
+  /* Primary - Navy Blue for trust and professionalism */
+  --primary: oklch(0.28 0.08 250);
+  --primary-foreground: oklch(0.98 0 0);
+
+  /* Secondary - Sport Red for energy */
+  --secondary: oklch(0.5 0.22 25);
+  --secondary-foreground: oklch(0.98 0 0);
+
+  --muted: oklch(0.95 0.005 240);
+  --muted-foreground: oklch(0.45 0.01 240);
+
+  /* Accent - Gold for highlights */
+  --accent: oklch(0.65 0.15 70);
+  --accent-foreground: oklch(0.15 0.01 240);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.88 0.005 240);
+  --input: oklch(0.92 0.005 240);
+  --ring: oklch(0.28 0.08 250);
+  --chart-1: oklch(0.28 0.08 250);
+  --chart-2: oklch(0.5 0.22 25);
+  --chart-3: oklch(0.65 0.15 70);
+  --chart-4: oklch(0.35 0.12 150);
+  --chart-5: oklch(0.55 0.15 200);
+  --radius: 0.375rem;
+  --sidebar: oklch(0.98 0.002 240);
+  --sidebar-foreground: oklch(0.15 0.01 240);
+  --sidebar-primary: oklch(0.28 0.08 250);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.95 0.005 240);
+  --sidebar-accent-foreground: oklch(0.15 0.01 240);
+  --sidebar-border: oklch(0.88 0.005 240);
+  --sidebar-ring: oklch(0.28 0.08 250);
+
+  /* SportKlub HR Custom Colors */
+  --sk-navy: oklch(0.28 0.08 250);
+  --sk-navy-dark: oklch(0.22 0.08 250);
+  --sk-navy-light: oklch(0.35 0.08 250);
+  --sk-red: oklch(0.5 0.22 25);
+  --sk-red-dark: oklch(0.42 0.22 25);
+  --sk-red-light: oklch(0.58 0.22 25);
+  --sk-gold: oklch(0.65 0.15 70);
+  --sk-gold-dark: oklch(0.55 0.15 70);
+  --sk-white: oklch(1 0 0);
+  --sk-off-white: oklch(0.98 0.002 240);
+  --sk-grey-light: oklch(0.95 0.005 240);
+  --sk-grey: oklch(0.75 0.005 240);
+  --sk-grey-dark: oklch(0.55 0.01 240);
+  --sk-text: oklch(0.15 0.01 240);
+  --sk-text-light: oklch(0.45 0.01 240);
+  --sk-border: oklch(0.88 0.005 240);
+  --sk-border-dark: oklch(0.75 0.005 240);
+}
+
+.dark {
+  --background: oklch(0.15 0.01 240);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.18 0.01 240);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.16 0.01 240);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.45 0.12 240);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.58 0.22 25);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.22 0.01 240);
+  --muted-foreground: oklch(0.65 0.01 240);
+  --accent: oklch(0.7 0.15 70);
+  --accent-foreground: oklch(0.15 0.01 240);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.25 0.01 240);
+  --input: oklch(0.22 0.01 240);
+  --ring: oklch(0.45 0.12 240);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* SportKlub color mappings */
+  --color-sk-navy: var(--sk-navy);
+  --color-sk-navy-dark: var(--sk-navy-dark);
+  --color-sk-navy-light: var(--sk-navy-light);
+  --color-sk-red: var(--sk-red);
+  --color-sk-red-dark: var(--sk-red-dark);
+  --color-sk-red-light: var(--sk-red-light);
+  --color-sk-gold: var(--sk-gold);
+  --color-sk-gold-dark: var(--sk-gold-dark);
+  --color-sk-white: var(--sk-white);
+  --color-sk-off-white: var(--sk-off-white);
+  --color-sk-grey-light: var(--sk-grey-light);
+  --color-sk-grey: var(--sk-grey);
+  --color-sk-grey-dark: var(--sk-grey-dark);
+  --color-sk-text: var(--sk-text);
+  --color-sk-text-light: var(--sk-text-light);
+  --color-sk-border: var(--sk-border);
+  --color-sk-border-dark: var(--sk-border-dark);
+
+  /* Professional fonts */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Merriweather", ui-serif, Georgia, serif;
+  --font-display: "Oswald", "Impact", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-sk-off-white text-sk-text;
+    font-feature-settings: "liga" 1, "calt" 1;
+  }
+}
+
+/* SportKlub Color Utilities */
+.bg-sk-navy {
+  background-color: var(--sk-navy);
+}
+.bg-sk-navy-dark {
+  background-color: var(--sk-navy-dark);
+}
+.bg-sk-navy-light {
+  background-color: var(--sk-navy-light);
+}
+.bg-sk-red {
+  background-color: var(--sk-red);
+}
+.bg-sk-red-dark {
+  background-color: var(--sk-red-dark);
+}
+.bg-sk-red-light {
+  background-color: var(--sk-red-light);
+}
+.bg-sk-gold {
+  background-color: var(--sk-gold);
+}
+.bg-sk-gold-dark {
+  background-color: var(--sk-gold-dark);
+}
+.bg-sk-white {
+  background-color: var(--sk-white);
+}
+.bg-sk-off-white {
+  background-color: var(--sk-off-white);
+}
+.bg-sk-grey-light {
+  background-color: var(--sk-grey-light);
+}
+.bg-sk-grey {
+  background-color: var(--sk-grey);
+}
+.bg-sk-grey-dark {
+  background-color: var(--sk-grey-dark);
+}
+
+.text-sk-navy {
+  color: var(--sk-navy);
+}
+.text-sk-navy-dark {
+  color: var(--sk-navy-dark);
+}
+.text-sk-navy-light {
+  color: var(--sk-navy-light);
+}
+.text-sk-red {
+  color: var(--sk-red);
+}
+.text-sk-red-dark {
+  color: var(--sk-red-dark);
+}
+.text-sk-red-light {
+  color: var(--sk-red-light);
+}
+.text-sk-gold {
+  color: var(--sk-gold);
+}
+.text-sk-gold-dark {
+  color: var(--sk-gold-dark);
+}
+.text-sk-white {
+  color: var(--sk-white);
+}
+.text-sk-text {
+  color: var(--sk-text);
+}
+.text-sk-text-light {
+  color: var(--sk-text-light);
+}
+.text-sk-grey {
+  color: var(--sk-grey);
+}
+.text-sk-grey-dark {
+  color: var(--sk-grey-dark);
+}
+
+.border-sk-navy {
+  border-color: var(--sk-navy);
+}
+.border-sk-red {
+  border-color: var(--sk-red);
+}
+.border-sk-gold {
+  border-color: var(--sk-gold);
+}
+.border-sk-border {
+  border-color: var(--sk-border);
+}
+.border-sk-border-dark {
+  border-color: var(--sk-border-dark);
+}
+
+.hover\:bg-sk-navy:hover {
+  background-color: var(--sk-navy);
+}
+.hover\:bg-sk-navy-dark:hover {
+  background-color: var(--sk-navy-dark);
+}
+.hover\:bg-sk-red:hover {
+  background-color: var(--sk-red);
+}
+.hover\:bg-sk-grey-light:hover {
+  background-color: var(--sk-grey-light);
+}
+.hover\:text-sk-navy:hover {
+  color: var(--sk-navy);
+}
+.hover\:text-sk-red:hover {
+  color: var(--sk-red);
+}
+.hover\:text-sk-gold:hover {
+  color: var(--sk-gold);
+}
+.hover\:border-sk-navy:hover {
+  border-color: var(--sk-navy);
+}
+.hover\:border-sk-red:hover {
+  border-color: var(--sk-red);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Professional Typography */
+.font-display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
